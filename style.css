@@ -5,14 +5,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f0f0f0;
+    background-color: #121212;
+    color: #fff;
 }
 
 header {
     background-color: #000;
-    color: #fff;
     padding: 1rem;
-    text-align: center;
     width: 100%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -25,12 +24,24 @@ header h1 {
     font-size: 2rem;
 }
 
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
 #login-section {
     display: flex;
     align-items: center;
 }
 
-#login-section input, #login-section button {
+#login-section button {
     margin: 0 0.5rem;
     padding: 0.5rem;
 }
@@ -45,20 +56,20 @@ main {
 }
 
 .shirt {
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: #1e1e1e;
+    border: 1px solid #333;
     border-radius: 10px;
     margin: 1rem;
     overflow: hidden;
     text-align: center;
     width: 220px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .shirt:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
 .shirt img {
@@ -69,27 +80,11 @@ main {
 .shirt h2 {
     font-size: 1.2rem;
     margin: 0.5rem 0;
-    padding: 0 1rem;
+    color: #ff0066;
 }
 
 .shirt p {
     font-size: 1rem;
-    color: #555;
+    color: #ccc;
     margin: 0.5rem 0 1rem 0;
-}
-
-#admin-panel {
-    margin: 2rem;
-    padding: 2rem;
-    background-color: white;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-#admin-panel input, #admin-panel button {
-    display: block;
-    width: 100%;
-    margin: 0.5rem 0;
-    padding: 0.5rem;
 }
